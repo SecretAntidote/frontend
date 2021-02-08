@@ -1,0 +1,52 @@
+{
+  "name": "RbxWallets",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development backpack dev",
+    "build": "nuxt build -c ./nuxt.config.js && backpack build",
+    "start": "NODE_ENV=production node build/main.js",
+    "heroku-postbuild": "NODE_ENV=production npm run build",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/bulma": "^1.3.0",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@splidejs/vue-splide": "^0.3.5",
+    "backpack-core": "^0.8.4",
+    "body-parser": "^1.19.0",
+    "bulma-o-steps": "^1.0.9",
+    "bulma-steps-component": "^0.5.3",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.7",
+    "noblox.js": "^4.6.3",
+    "nuxt": "^2.14.6",
+    "vue-round-slider": "^1.0.1",
+    "webhook-discord": "^3.7.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "fibers": "^5.0.0",
+    "jest": "^26.5.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "vue-jest": "^3.0.4"
+  }
+}
